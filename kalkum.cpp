@@ -352,27 +352,38 @@ void KalkuM::odwrotna_przycisk()
     double val3a7=ui->lineEdit_19->text().toDouble();
     double val3a8=ui->lineEdit_20->text().toDouble();
     double val3a9=ui->lineEdit_21->text().toDouble();
+
+    double val3a11=val3a1;
+    double val3a22=val3a2;
+    double val3a33=val3a3;
+    double val3a44=val3a4;
+    double val3a55=val3a5;
+    double val3a66=val3a6;
+    double val3a77=val3a7;
+    double val3a88=val3a8;
+    double val3a99=val3a9;
+
     double wyznacznik3=static_cast<double>(liczenie_wyznacznik3(val3a1, val3a2, val3a3, val3a4, val3a5, val3a6, val3a7, val3a8, val3a9));
 
-    val3a1=(val3a5*val3a9-val3a6*val3a8)*(1/wyznacznik3);
-    val3a2=(val3a4*val3a8-val3a6*val3a7)*(-1)*(1/wyznacznik3);
-    val3a3=(val3a4*val3a8-val3a5*val3a7)*(1/wyznacznik3);
-    val3a4=(val3a2*val3a9-val3a3*val3a8)*(-1)*(1/wyznacznik3);
-    val3a5=(val3a1*val3a9-val3a3*val3a7)*(1/wyznacznik3);
-    val3a6=(val3a1*val3a8-val3a2*val3a7)*(-1)*(1/wyznacznik3);
-    val3a7=(val3a2*val3a6-val3a3*val3a5)*(1/wyznacznik3);
-    val3a8=(val3a1*val3a6-val3a3*val3a4)*(-1)*(1/wyznacznik3);
-    val3a9=(val3a1*val3a5-val3a2*val3a4)*(1/wyznacznik3);
+    val3a11=(val3a5*val3a9-val3a6*val3a8)*(1/wyznacznik3);
+    val3a22=(val3a4*val3a8-val3a6*val3a7)*(-1)*(1/wyznacznik3);
+    val3a33=(val3a4*val3a8-val3a5*val3a7)*(1/wyznacznik3);
+    val3a44=(val3a2*val3a9-val3a3*val3a8)*(-1)*(1/wyznacznik3);
+    val3a55=(val3a1*val3a9-val3a3*val3a7)*(1/wyznacznik3);
+    val3a66=(val3a1*val3a8-val3a2*val3a7)*(-1)*(1/wyznacznik3);
+    val3a77=(val3a2*val3a6-val3a3*val3a5)*(1/wyznacznik3);
+    val3a88=(val3a1*val3a6-val3a3*val3a4)*(-1)*(1/wyznacznik3);
+    val3a99=(val3a1*val3a5-val3a2*val3a4)*(1/wyznacznik3);
 
-    ui->lineEdit_36->setText(QString::number(val3a1));
-    ui->lineEdit_34->setText(QString::number(val3a4));
-    ui->lineEdit_35->setText(QString::number(val3a3));
-    ui->lineEdit_32->setText(QString::number(val3a2));
-    ui->lineEdit_31->setText(QString::number(val3a5));
-    ui->lineEdit_33->setText(QString::number(val3a6));
-    ui->lineEdit_37->setText(QString::number(val3a7));
-    ui->lineEdit_38->setText(QString::number(val3a8));
-    ui->lineEdit_39->setText(QString::number(val3a9));
+    ui->lineEdit_36->setText(QString::number(val3a11));
+    ui->lineEdit_34->setText(QString::number(val3a44));
+    ui->lineEdit_35->setText(QString::number(val3a33));
+    ui->lineEdit_32->setText(QString::number(val3a22));
+    ui->lineEdit_31->setText(QString::number(val3a55));
+    ui->lineEdit_33->setText(QString::number(val3a66));
+    ui->lineEdit_37->setText(QString::number(val3a77));
+    ui->lineEdit_38->setText(QString::number(val3a88));
+    ui->lineEdit_39->setText(QString::number(val3a99));
 
 
 
