@@ -29,12 +29,11 @@ private slots:
 private:
     Ui::KalkuM *ui;
     void setValidators();
-    Eigen::Matrix<double,3,3> a;
-    Eigen::Matrix<double,3,3> b;
-    Eigen::Matrix<double,3,3> wynik;
     int liczenie_wyznacznik(int a, int b, int c, int d);
     int liczenie_wyznacznik3(int a1, int a2, int a3, int b1, int b2, int b3, int c1, int c2, int c3);
-    void pokaz_wynik();
+    void pokaz_wynik(Eigen::Matrix<double,2,2> wynik);
+    void pokaz_wynik(Eigen::Matrix<double,3,3> wynik);
     double det;
+
 };
 #endif // KALKUM_H
